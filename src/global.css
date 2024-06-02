@@ -1,0 +1,92 @@
+:root {
+    --bg-color-normal: white;
+    --bg-color-normal1: rgb(198, 198, 198);
+    --bg-color-normal2: grey;
+    --bg-color-dark: rgb(50, 50, 50);
+    --bg-color-dark1: rgb(70, 70, 70);
+    --bg-color-dark2: rgb(92, 92, 92);
+    
+    --text-color-dark: rgb(198, 198, 198);
+}
+
+html.dark {
+    background-color: var(--bg-color-dark);
+}
+
+.question-card {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 16px;
+    box-shadow: 3px 1px 16px 0px #1a1a1a;
+    height: 400px;
+    border-radius: 12px;
+}
+.question-card-footer {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 24px;
+    justify-self: flex-end;
+}
+
+.dark .question-card {
+    background-color: var(--bg-color-dark1);
+    color: var(--text-color-dark);
+    box-shadow: 3px 1px 16px 0px var(--bg-color-normal2);
+    border: 1px solid #333333; /* Optional: subtle border for better definition */
+    /* Rest of your styles */
+}
+
+.dark label{
+    color: var(--text-color-dark);
+}
+
+.dark input{
+    color: var(--text-color-dark);
+    background-color:  var(--bg-color-dark2);
+}
+
+.dark input::placeholder {
+    color: grey;
+}
+
+.dark dialog{
+    background-color: var(--bg-color-dark1);
+}
+
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6, .dark p, .dark span, .dark a, .dark li, .dark td, .dark .for-dark-mode, .dark .input, .dark button, .dark textarea{
+    /* color: var(--text-color-dark); */
+    color: rgb(140, 255, 0);
+    
+}
+
+.dark dialog{
+    background-color: var(--bg-color-dark1);
+}
+
+.dark td{
+    background-color: var(--bg-color-dark1);
+}
+
+.dark th{
+    background-color: var(--bg-color-dark1);
+}
+
+.dark .card{
+    background-color: var(--bg-color-dark1);
+}
+
+.dark a{
+    background-color: var(--bg-color-dark1);
+}
+
+.dark .box{
+    background-color: var(--bg-color-dark1);
+}
+
+.dark button{
+    background: var(--bg-color-dark2);
+}
+.dark textarea{
+    background: var(--bg-color-dark2);
+}
